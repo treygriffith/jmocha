@@ -17,9 +17,13 @@
       window.assert = chai.assert;
     </script>
 
-    <script src="joules.js">
+    <script src="joules.js"></script>
+
+    <script>
       require.ready(function() {
-        require('{{script}}');
+        require('./{{script}}');
+
+        console.log("ready!");
 
         window.mocha.run();
       });

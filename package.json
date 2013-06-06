@@ -1,7 +1,7 @@
 {
 	"name": "jmocha",
 	"description": "Mocha testing for Joules Modules",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"dependencies": {
 		"optimist" : "0.5.2",
 		"joules": "0.1.x",
