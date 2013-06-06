@@ -1,0 +1,17 @@
+{
+	"name": "jmocha",
+	"description": "Mocha testing for Joules Modules",
+	"version": "0.0.1",
+	"dependencies": {
+		"optimist" : "0.5.2",
+		"joules": "0.1.x",
+		"express": "3.x",
+		"hogan.js": "*",
+		"consolidate": "*",
+		"mocha": "1.8.x",
+		"chai": "*"
+	},
+	"bin": {
+		"jmocha": "index.js"
+	}
+}

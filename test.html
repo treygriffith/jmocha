@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mocha.css" />
+  </head>
+  <body>
+    {{bro}}
+    <div id="mocha"></div>
+
+    <script src="mocha.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+    </script>
+    <script src="chai.js"></script>
+    <script>
+      window.assert = chai.assert;
+    </script>
+
+    <script src="joules.js">
+      require.ready(function() {
+        require('{{script}}');
+
+        window.mocha.run();
+      });
+    </script>
+
+  </body>
+</html>
